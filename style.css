@@ -1,0 +1,44 @@
+body{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#container{
+    background-color: #606060;
+    width: 1000px;
+    height: 500px;
+}
+
+#tela {
+    display: block;
+    float: left;
+    background-color: #ffffff;
+    width: 600px;
+    height: 400px;
+    margin: 50px 0px 0px 30px;
+}
+
+#botoes {
+    display: block;
+    float: right;
+    background-color: #000000;
+    width: 300px;
+    height: 400px;
+    margin: 50px 30px 0px 0px;
+}
+
+#botoes input {
+    
+    margin: 30px;
+   
+}
+
+#numeracao {
+    margin: 0px 20px;
+}
+
+#processamento {
+    margin: 0px -15px;
+    display: flex;
+}
