@@ -6,31 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urna Eletrônica</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
 
     <div id="container">
         <div id="tela">
 
+
         </div>
         <div id="botoes">
             <aside id="numeracao">
-                <input type="button" value="1">
-            <input type="button" value="2">
-            <input type="button" value="3">
-            <input type="button" value="4">
-            <input type="button" value="5">
-            <input type="button" value="6">
-            <input type="button" value="7">
-            <input type="button" value="8">
-            <input type="button" value="9">
+            
+                <input id="btn1" type="button" value="1" onclick="resultado('1')">
+                <input id="btn2" type="button" value="2" onclick="resultado('2')">
+                <input id="btn3" type="button" value="3" onclick="resultado('3')">
+                <input id="btn4" type="button" value="4" onclick="resultado('4')">
+                <input id="btn5" type="button" value="5" onclick="resultado('5')">
+                <input id="btn6" type="button" value="6" onclick="resultado('6')">
+                <input id="btn7" type="button" value="7" onclick="resultado('7')">
+                <input id="btn8" type="button" value="8" onclick="resultado('8')">
+                <input id="btn9" type="button" value="9" onclick="resultado('9')">
+               
+
             </aside>
             
-            <input style=" margin: auto; display:block;" type="button" value="0">
+            <input style=" margin: auto; display:block; padding: 5px 20px" id="btn0" type="button" value="0" onclick="resultado('0')">
             <aside id="processamento">
-                <input style="margin-right: -20px;" type="button" value="BRANCO">
-                <input style="margin-right: -20px;" type="button" value="CORRIGIR">
-                <input type="button" value="CONFIRMAR">
+                <input style="margin-right: -20px;" id="btnBranco" type="button" value="BRANCO" onclick="nulo()">
+                <input style="margin-right: -20px;" id="btnCorrigir" type="button" value="CORRIGIR" onclick="limpar()">
+                <input id="btnConfirmar" type="button" value="CONFIRMAR" onclick="confirmar()">
             </aside>
          
         </div>
